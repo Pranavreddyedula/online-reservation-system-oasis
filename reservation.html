@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Train Reservation Form</h2>
+
+  <input type="text" id="name" placeholder="Passenger Name">
+  <input type="number" id="age" placeholder="Age">
+
+  <input type="text" id="trainNo" placeholder="Train Number" onkeyup="setTrainName()">
+  <input type="text" id="trainName" placeholder="Train Name" readonly>
+
+  <select id="classType">
+    <option>Sleeper</option>
+    <option>AC</option>
+    <option>General</option>
+  </select>
+
+  <input type="date" id="journeyDate">
+  <input type="text" id="fromPlace" placeholder="From">
+  <input type="text" id="toPlace" placeholder="To">
+
+  <button onclick="reserve()">Insert</button>
+  <a href="dashboard.html"><button class="danger">Back</button></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
